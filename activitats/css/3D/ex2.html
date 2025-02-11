@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oveja 3D</title>
+    <style>
+        .escena {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: url('wall.jpg') top center / cover no-repeat;
+        }
+        .suelo {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: url('floor.jpg') bottom center / cover no-repeat;
+        }
+        .oveja {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: url('oveja.svg') center / cover no-repeat;
+            left: 150px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="escena">
+        <div class="suelo"></div>
+        <div class="oveja"></div>
+    </div>
+</body>
+</html>

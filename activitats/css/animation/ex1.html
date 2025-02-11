@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+<body>
+    <style>
+        @keyframes animacion-eclipse {
+            0% { left: -150px; }
+            25% { left: 25%; transform: translateX(-50%); }
+            50% { left: 50%; transform: translateX(-50%); }
+            75% { left: 75%; transform: translateX(-50%); }
+            100% { left: 200px; }
+        }
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+        .sol {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50px;
+            margin: auto;
+        }
+        .luna {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 50px;
+            margin-left: 50px;
+            animation: animacion-eclipse 4s infinite linear;
+        }
+        .circulos {
+            position: relative;
+            display: flex;
+        }
+    </style>
+    <div class="circulos">
+        <div class="sol"></div>
+        <div class="luna"></div>
+    </div>
+</body>
+</html>
