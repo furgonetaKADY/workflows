@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Hover 3D</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            perspective: 500px;
+            perspective-origin: center;
+        }
+        .imagen {
+            width: 200px;
+            height: 300px;
+            transition: transform 1s ease;
+        }
+        .imagen:hover {
+            transform: rotateY(20deg) rotateX(10deg) translateZ(20px) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="perro.webp" alt="perro_img" class="imagen">
+    </div>
+</body>
+</html>
