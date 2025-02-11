@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+<body>
+    <style>
+        input {    
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 5px;
+            transition: all 1s ease;
+        }
+        input:focus {
+            border-color: white;
+            outline: none;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            cursor: pointer;
+            transition: background 0.5s ease;
+        }
+        input[type="submit"]:hover {
+            background: white;
+            color: blue;
+            border: 2px solid blue;
+        }
+    </style>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <label>Telefono:</label>
+        <input type="number" name="telefono">
+        <input type="submit">
+    </form>
+</body>
+</html>
